@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Registrate</title>
+</head>
+<body>
+    <div class="Navbar">
+        <div class="container-fluid fit-box">
+            <a href="./index.html" class="Navbar__brand">
+                <img src="tubo-de-ensayo.svg" alt="" width="50s">
+                <span class="font-weight-bold" >Inicio</span> 
+            </a>
+            <a href="./registro.html" class="Navbar__brand">
+                <span class="font-weight-bold" >Registro</span> 
+            </a>
+            <a href="./info.html" class="Navbar__brand">
+                <span class="font-weight-bold" >Sobre Nosotros</span> 
+            </a>
+        </div>
+    </div>
+    <div class="BadgeNew__hero">
+        <img class="BadgeNew__hero-image img-fluid" src="tubo-de-ensayo.svg" alt="conflogo" width="100"></img>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <h1>Datos del paciente</h1>
+                <div>
+                    <form action="" id="form">
+                        <div class="form-group">
+                            <label> Nombre Completo</label>
+                            <input class="form-control" type="text" name="fullname" id="name"></input>
+                        </div>
+    
+                        <div class="form-group">
+                            <label> Cedula</label>
+                            <input class="form-control" type="number" name="cedula" id="cedula"></input>
+                        </div>
+    
+                        <div class="form-group">
+                            <label> Edad</label>
+                            <input class="form-control" type="number" name="edad" id="edad"></input>
+                        </div>
+
+                        <div class="form-group">
+                            <label> Telefono</label>
+                            <input class="form-control" type="text" name="telefono" id="telefono"></input>
+                        </div>
+
+                        <div class="form-group">
+                            <label> Sexo</label>
+                            <select class="form-control" name="sexo" id="sex">
+                                <option value="masculino">Masculino</option>
+                                <option value="femenino">Femenino</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label> Estado</label>
+                            <select class="form-control" name="estado" id="selectPrincipal">
+                                <option value="amazonas">Amazonas</option>
+                                <option value="anzoategui">Anzoátegui</option>
+                                <option value="apure">Apure</option>
+                                <option value="aragua">Aragua</option>
+                                <option value="barinas">Barinas</option>
+                                <option value="bolivar">Bolívar</option>
+                                <option value="carabobo">Carabobo</option>
+                                <option value="cojedes">Cojedes</option>
+                                <option value="delta amacuro">Delta Amacuro</option>
+                                <option value="falcon">Falcón</option>
+                                <option value="guarico">Guárico</option>
+                                <option value="lara">Lara</option>
+                                <option value="merida">Mérida</option>
+                                <option value="miranda">Miranda</option>
+                                <option value="monagas">Monagas</option>
+                                <option value="nueva esparta">Nueva Esparta</option>
+                                <option value="portuguesa">Portuguesa</option>
+                                <option value="sucre">Sucre</option>
+                                <option value="tachira">Táchira</option>
+                                <option value="trujillo">Trujillo</option>
+                                <option value="vargas">Vargas</option>
+                                <option value="yaracuy">Yaracuy</option>
+                                <option value="zulia">Zulia</option>
+                                <option value="distrito capital">Distrito Capital</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label> Municipio</label>
+                            <select class="form-control" name="estado" id="selectMunicipio">
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label> Ciudad</label>
+                            <select class="form-control" name="ciudad" id="selectCiudad">
+                            </select>
+                        </div>
+    
+                    </form>
+                </div>
+                
+                </div>
+                <div class="col-6">
+                    <h1>Resultados del paciente</h1>
+                    <div>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Examen químico</th>
+                                    <th scope="col">Valor de referencia</th>
+                                    <th scope="col">Valor normal</th>
+                                    <th scope="col">Valor alto</th>
+                                    <th scope="col">Valor del paciente</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="col"> Glicemia</th>
+                                    <td>70-110</td>
+                                    <td>70-99</td>
+                                    <td>100-110</td>
+                                    <td><input class="form-control" type="number" placeholder="ingrese el valor del paciente" name="glicemia" id="glicemia"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="col"> Colesterol</th>
+                                    <td>60-200</td>
+                                    <td>60-200</td>
+                                    <td>200-en adelante</td>
+                                    <td><input class="form-control" type="number" placeholder="ingrese el valor del paciente" name="colesterol" id="colesterol"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="col"> Triglicérido</th>
+                                    <td>50-140</td>
+                                    <td>50-100</td>
+                                    <td>101-140</td>
+                                    <td><input class="form-control" type="number" placeholder="ingrese el valor del paciente" name="triglicerido" id="triglicerido"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="col"> Ácido Úrico</th>
+                                    <td>4.8-6.8</td>
+                                    <td>4.8-5.8</td>
+                                    <td>5.9-6.8</td>
+                                    <td><input class="form-control" type="number" placeholder="ingrese el valor del paciente" name="acido_urico" id="acido"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <button class="btn btn-primary" type="button" id="button">Enviar resultados</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <script src="index.js"></script>
+</body>
+</html>
